@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+    <script src="https://kit.fontawesome.com/4cc7ccbe37.js" crossorigin="anonymous"></script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Eggy Timer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-info">
+            <h2>Eggy Timer Guide</h2>
+            
+            <ul>
+                <li>
+                    <h3><i class="fas fa-egg"></i> Lil' Runny</h3>
+                    <p>Egg white is set, yolk is mostly set with a runny center</p>
+                </li>
+                <li>
+                    <h3><i class="fas fa-egg"></i> Tender</h3>
+                    <p>Egg white is fully set, yolk is set but tender</p>
+                </li>
+                <li>
+                    <h3><i class="fas fa-egg"></i> Hearty</h3>
+                    <p>Both egg white and yolk is set. Enjoy!</p>
+                </li>
+                <li>
+                    <h3>Pomodoro Timer 🍅</h3>
+                    <p>Bonus 25 minute timer to boost your productivity levels!</p>
+                </li>
+            </ul>
+
+            <div class="note-wrapper">
+                <span>Note:</span> Various factors may effect egg cooking times, such as egg size, amount of water used and more!
+                    For more information check out <a href="https://www.masterclass.com/articles/all-about-soft-boiled-eggs-how-long-to-boil-eggs-and-easy-recipe#cooking-time-chart-for-boiled-eggs" target="_blank">this link</a>.
+            </div>
+
+            <a class="moreCoder" href="https://mayyanto.hashnode.dev/first-hashnode-hackathon" target="_blank">More info, Click here 🌻</a>
+        </div>
+
+        <i class="fas fa-info-circle"></i>
+        <h1>Eggy Timer</h1>
+
+        <div class="egg-wrapper">
+            <div class="egg-white">
+                <div class="display-time" id="display-time">00:00</div>
+
+                <div class="egg-yolk">
+                    <div class="eyes"></div>
+                    <div class="mouth"></div>
+                    <div class="tom-lt">🍅</div>
+                    <div class="tom-rt">🍅</div>
+                    <div class="cheek-left"></div>
+                    <div class="cheek-right"></div>
+                    <div class="pupil-left"></div>
+                    <div class="pupil-right"></div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="options">
+            <label for="options">Choose Egg Type</label>
+            <select name="options" id="options">
+                <option id="fiveMin" value="5">Lil' Runny</option>
+                <option id="eightMin" value="8">Tender</option>
+                <option id="tenMin" value="10">Hearty</option>
+                <option id="setTime" value="25">Pomodoro 🍅</option>
+            </select>
+        </div>
+
+        <div class="btns-wrapper">
+            <button class="start" id="start">start</button>
+            <button class="stop" id="stop">stop</button>
+            <button class="reset" id="reset">reset</button>
+        </div>
+        
+        <div><button class="sayHi" id="sayHi">Say Hi to Eggy!</button></div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
